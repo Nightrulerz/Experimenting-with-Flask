@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Testing interface</h1>
+    <div align="center">
+        <form id="input_name", action="{{ url_for('get_name') }}", method="GET">
+            <input style="text-align: center", type="text", name="username">
+            <input style="text-align: center", type="submit", value="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
